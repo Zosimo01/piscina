@@ -1,0 +1,87 @@
+.modulos01{
+   
+    width: 100%;
+
+    padding-bottom: 20px;
+}
+
+.horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: girasol,sans-serif;
+}
+.horario div{
+    box-sizing: content-box;
+ margin-top: 10px;
+}
+.horario h2{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    color: rgb(218, 112, 112);
+}
+
+.horario p{
+    padding: 0 20px;
+}
+/* tablas */
+.primeratabla{
+    max-height: 100px;
+}
+
+
+.primeratabla, caption{
+    padding-top: 10px;
+    margin: auto;
+}
+caption{
+    color: rgb(122, 115, 115);
+
+}
+.primeratabla th,td{ 
+    border: solid maroon;
+    padding: 9px;
+    cursor: pointer;
+}
+.enviar{
+    background-color: lightcyan;
+    text-align: center;
+}
+
+.ubicacion{
+    position: absolute;
+    /* top: ; */
+    /* display: none; */
+    width: 100px;
+    height: 200px;
+    bottom: 3%;
+    left:75%;
+    background-color:rgb(233, 240, 241)
+}
+
+@media screen and (max-width:650px) { 
+    .ubicacion{
+        position: static;
+        width: auto;
+        height: 60px;
+
+    bottom: 0;
+    left:0;
+    }
+    .maps{
+        width: 90%;
+    }
+}
+/* img */
+
+.maps{
+    margin-top: 20px;
+  
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.maps picture img{
+    width: 100%;
+}

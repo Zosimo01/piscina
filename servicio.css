@@ -1,0 +1,273 @@
+*{margin: 0;padding: 0px;}
+body{
+  
+    background-color: gray;
+  
+}
+p{
+    text-align: justify;
+}
+/* @font-face{
+	font-family: girasol;
+	src: url(fonds/Oswald-VariableFont_wght.ttf);
+} */
+/* cabeza */
+header{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(44, 66, 196);
+}
+
+header figure{
+    width: 60px;
+    margin-top: -10px;
+
+  float: right;
+}
+
+header figure img{
+    width: 100%;
+    border-radius: 50%;
+}
+header h1{
+    color: rgb(218, 112, 112);
+    text-shadow: 5px 10px 4px rgb(41, 6, 6);
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+header nav{
+    background-color: rgb(18, 11, 59);
+    clear: both;
+    display: flex;
+    border: solid;
+    justify-content: center;
+}
+.Menu, .simulate, .menus{
+    display: none; 
+
+}
+
+@keyframes uno{
+    from {backface-visibility: hidden;}
+    to{backface-visibility: visible;}
+}
+@keyframes dos{
+    from {-webkit-transform:rotate(5deg)}
+    to{-webkit-transform:rotate(-5deg)}
+}
+nav a{
+    margin: 10px 5px;
+    padding: 5px 0;
+    width: 200px;
+    text-align: center;
+    color: rgb(153, 153, 173);
+    /* color:  rgb(18, 11, 59); */
+    backface-visibility: hidden;
+    
+
+}
+
+header nav a:hover{
+    background-color: rgb(169, 169, 223);
+    color: #000;
+    animation-name:dos;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    /* -webkit-transform:perspective(500px) translate3d(20px,0,0) */
+  
+}
+
+
+@media screen and (max-width:650px) { 
+
+    header{
+        margin-bottom: 55px;
+    }
+header h1{
+
+    width: auto;
+    margin: 0px;
+    font-size: 150%;
+    /* border: solid; */
+    padding:10px 10px;
+}
+
+header h1 figure{
+    display: none;
+}
+
+    .Menu{
+        display: block;
+        border-right: 2px solid rgb(155, 150, 150);
+        padding: 10px;
+    background-color: rgb(16, 6, 71);
+      color: rgb(235, 220, 201);
+      width: 180px;
+      position: absolute;
+      cursor: pointer;
+      margin-top: 2px;
+    }
+    .menus{
+        padding: 10px;
+        height: 20px;
+        display: block;
+        color: white;
+        background-color: rgb(46, 44, 151);
+
+        
+    }
+    .simulate{
+        display: block;
+        width: 100%;
+        background-color: rgb(16, 6, 71);
+
+        float: right;
+        height: 42px;
+    }
+    header nav{
+
+        visibility: hidden;
+
+        position: absolute;
+     
+        flex-direction: column;
+
+    }
+     @keyframes tres{
+        0%{background-color: rgba(10, 5, 32, .5);}
+        100%{background-color: rgba(18, 11, 59, 1);}
+    }
+    .Menu:hover+nav{
+        display: flex;
+    }
+
+   .Menu{
+       background-color: rgb(46, 44, 151);
+   }
+    .Menu:active+nav{
+        visibility: visible;
+        animation-name:tres;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        
+    }
+    header nav:hover{
+
+        visibility: visible;
+        display: flex;
+
+       animation-name:tres;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    
+    nav a{
+        margin: 10px 0;
+    }
+
+
+}
+
+/* cuerpo */
+main{
+    padding: 20px 0;
+    width: 90%;
+    background-color:#FFFFFF;
+    margin: auto;
+}
+
+.textos{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sevicio{
+    margin-left: 20px;
+}
+.modulos p{
+    padding:20px;
+}
+/* video */
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    border-top: solid;
+    text-align: center;
+}
+.videos h2{
+    padding: 20px 0px;
+    border-bottom:solid;
+}
+
+.videos p{
+    padding: 10px 0;
+}
+
+.videos .movie{
+    margin: auto;
+    min-width: 600px;
+   width: 50%;
+
+}
+
+.movie video{
+    width: 100%;
+}
+
+@media screen and (max-width:890px) {
+   
+    .videos .movie{
+    min-width: 200px;
+
+       width: 80%;
+    }
+    .textos{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* pie */
+
+footer{
+    background-color: rgb(18, 11, 59);
+
+color: white;
+    margin-top: 10px;
+    border-top:solid rgb(1, 1, 17);
+    text-align: center;
+}
+
+footer .pie{
+    display: flex;
+    justify-content: center;
+}
+ .pie div{
+     width: 50%;
+     padding: 20px 10px;
+     box-sizing: padding-box;
+
+    }
+    
+    .pie div p{
+        margin: auto;
+        max-width: 200px;
+        background-color: rgb(81, 54, 131);
+        padding: 5px;
+     text-align: center;
+    margin-top: 10px;
+ }

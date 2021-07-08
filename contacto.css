@@ -1,0 +1,79 @@
+
+
+.titu01{
+    text-align: center;
+    padding: 20px;
+}
+
+.contend{
+    margin: auto;
+   max-width:400px;
+    margin-bottom: 100px;
+}
+
+.send{
+    display: flex;
+    flex-direction: column;
+}
+.send input{
+    margin: 10px;
+    font-size: 20px;
+    max-width: 50%;
+    min-width: 200px;
+    padding: 5px;
+}
+
+textarea{
+    margin: 0 10px;
+}
+
+.submit{
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    float: left;
+} 
+
+.modulos05{
+    width: 100%;
+}
+
+.modulos05 div{
+   /* max-width: 900px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ img{
+     margin: auto;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:890px) {
+ 
+    main{
+        height: 600px;
+    }
+    .contend{
+        margin-bottom: 20px;
+    }
+    /* .name , .submit{
+        margin-top: 20px;
+        margin-left: 12px;
+
+    } */
+    .msg{
+        width: 90%;
+        margin:0 12px;
+    }
+    
+}
