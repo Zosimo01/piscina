@@ -2,7 +2,7 @@
   "name": "mipagina",
   "version": "1.0.0",
   "description": "julito",
-  "main": "index.js",
+  "main": "servicio.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "servicio.html"
